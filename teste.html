@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título do Vídeo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo img {
+    height: 40px;
+}
+
+#search-bar {
+    display: flex;
+    align-items: center;
+}
+
+#search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 2px;
+}
+
+#search-bar button {
+    padding: 6px 10px;
+    margin-left: 5px;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#nav-icons img {
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+#content {
+    flex: 3;
+}
+
+#video-player {
+    margin-bottom: 20px;
+}
+
+#video-player video {
+    width: 100%;
+    height: auto;
+}
+
+#video-details h1 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+#video-metadata {
+    color: #606060;
+}
+
+#video-actions button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+#description {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#channel-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#channel-info img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#channel-info h2 {
+    margin: 0;
+}
+
+#comments-section {
+    margin-top: 20px;
+}
+
+#comments-section h3 {
+    margin-bottom: 10px;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.comment img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-content {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+aside#related-videos {
+    flex: 1;
+    margin-left: 20px;
+}
+
+#related-videos h3 {
+    margin-bottom: 10px;
+}
+
+.related-video {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.related-video img {
+    width: 120px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="https://www.youtube.com/"><img src="logo.png" alt="YouTube Logo"></a>
+        </div>
+        <div id="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        <div id="nav-icons">
+            <img src="home-icon.png" alt="Home">
+            <img src="trending-icon.png" alt="Trending">
+            <img src="subscriptions-icon.png" alt="Subscriptions">
+            <img src="library-icon.png" alt="Library">
+            <img src="profile-icon.png" alt="User Profile">
+        </div>
+    </header>
+    
+    <main>
+        <div id="content">
+            <div id="video-player">
+                <video width="800" height="450" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h1>Título do Vídeo</h1>
+                <div id="video-metadata">
+                    <span>1,234,567 views</span>
+                    <span>•</span>
+                    <span>Publicado em 1 de Janeiro de 2024</span>
+                </div>
+                <div id="video-actions">
+                    <button>Gostei</button>
+                    <button>Não gostei</button>
+                    <button>Compartilhar</button>
+                    <button>Salvar</button>
+                    <button>...</button>
+                </div>
+                <div id="description">
+                    <p>Descrição do vídeo...</p>
+                </div>
+            </div>
+            
+            <div id="channel-info">
+                <img src="channel-logo.png" alt="Channel Logo">
+                <div>
+                    <h2>Nome do Canal</h2>
+                    <button>Inscrever-se</button>
+                    <span>1M inscritos</span>
+                </div>
+            </div>
+            
+            <div id="comments-section">
+                <h3>Comentários</h3>
+                <div class="comment">
+                    <img src="user1-pic.png" alt="User 1 Profile">
+                    <div class="comment-content">
+                        <p><strong>User1</strong></p>
+                        <p>Comentário do usuário 1...</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <img src="user2-pic.png" alt="User 2 Profile">
+                    <div class="comment-content">
+                        <p><strong>User2</strong></p>
+                        <p>Comentário do usuário 2...</p>
+                    </div>
+                </div>
+                <!-- Mais comentários -->
+            </div>
+        </div>
+
+        <aside id="related-videos">
+            <h3>Vídeos Relacionados</h3>
+            <div class="related-video">
+                <img src="related1.jpg" alt="Related Video 1">
+                <p>Título do Vídeo Relacionado 1</p>
+            </div>
+            <div class="related-video">
+                <img src="related2.jpg" alt="Related Video 2">
+                <p>Título do Vídeo Relacionado 2</p>
+            </div>
+            <!-- Mais vídeos relacionados -->
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2024 YouTube</p>
+        <p><a href="#">Termos</a> | <a href="#">Privacidade</a> | <a href="#">Ajuda</a></p>
+    </footer>
+</body>
+</html>
